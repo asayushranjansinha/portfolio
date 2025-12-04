@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -20,8 +21,10 @@ export function MobileNavSheet({
   items: NavItem[];
   className?: string;
 }) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
         <Button
           variant="ghost"
@@ -37,9 +40,7 @@ export function MobileNavSheet({
       <SheetContent side="left" className="w-72 p-4">
         <SheetHeader className="sr-only">
           <SheetTitle>Site Navigation</SheetTitle>
-          <SheetDescription>
-            Browse sections and recent activity
-          </SheetDescription>
+          <SheetDescription>Browse sections and recent activity</SheetDescription>
         </SheetHeader>
 
         <div className="flex flex-col gap-3 mt-2">
@@ -49,6 +50,8 @@ export function MobileNavSheet({
               asChild
               variant="ghost"
               className="w-full justify-start text-base font-medium"
+              // close sheet on click
+              onClick={() => setOpen(false)}
             >
               <Link href={link.href}>{link.title}</Link>
             </Button>

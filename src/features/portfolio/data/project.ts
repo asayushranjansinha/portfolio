@@ -78,7 +78,6 @@ Built with **industry best practices**, demonstrating proficiency in distributed
       start: "01.2024",
       end: "Present",
     },
-    link: "https://github.com/asayushranjansinha/lms",
     skills: [
       "React Native",
       "Expo",
@@ -124,51 +123,6 @@ Currently handling final testing and optimization before public launch on mobile
     `,
     logo: "/images/projects/lms.svg",
     isExpanded: true,
-  },
-  {
-    id: "neuron-productivity",
-    title: "Neuron - Productivity Software",
-    period: {
-      start: "06.2023",
-      end: "12.2023",
-    },
-    link: "https://github.com/asayushranjansinha/neuron", // Update with actual link
-    skills: [
-      "Next.js 13",
-      "React",
-      "TypeScript",
-      "Convex",
-      "Clerk Auth",
-      "Real-time Sync",
-      "Tailwind CSS",
-    ],
-    description: `
-A **Notion-inspired productivity application** with real-time collaboration features, built to demonstrate modern web development patterns.
-
-### Key Features
-- **Unlimited Nested Notes**: Hierarchical document structure with infinite nesting
-- **Real-Time Synchronization**: Powered by Convex for instant multi-device sync
-- **Shareable Links**: Public and private sharing with granular permissions
-- **Soft Deletes**: Trash system with restoration capabilities
-- **File Uploads**: Attachment support with cloud storage
-- **Rich Text Editing**: Advanced editor with formatting options
-- **Secure Authentication**: Clerk-based user management
-
-### Real-Time Capabilities
-- Instant updates across all connected devices
-- Conflict-free collaborative editing
-- Live cursor and presence indicators
-- Offline support with automatic sync
-
-### User Experience
-- Clean, minimal interface inspired by Notion
-- Fast navigation and search
-- Keyboard shortcuts for power users
-- Responsive design for mobile and desktop
-
-Demonstrates expertise in **real-time architectures**, **state synchronization**, and **modern authentication patterns**.
-    `,
-    logo: "/images/projects/neuron.svg",
   },
   {
     id: "ayush-portfolio",
