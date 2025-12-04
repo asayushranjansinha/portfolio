@@ -1,4 +1,4 @@
-# Portfolio
+# Portfolio (DEPLOYED ON VERCEL)
 
 A modern, portfolio website built with Next.js 16, Tailwind CSS 4, and Framer Motion. This project showcases my work, skills, and thoughts through a dynamic interface and a custom blog system.
 
