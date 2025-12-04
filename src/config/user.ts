@@ -21,7 +21,7 @@ export const USER: User = {
     "500+ DSA Problems Solved",
     "Building scalable products",
   ],
-  address: "Bengaluru, India",
+  address: "Bokaro Steel City, India",
   phoneNumber: "KzkxODcwOTQxNTU5OA==", // base64 encoded E.164, keep as-is
   email: "YXNheXVzaHJhbmphbnNpbmhhQGdtYWlsLmNvbQ==", // base64 encoded, keep as-is
   website: process.env.NEXT_PUBLIC_BASE_APP_URL!,
@@ -29,11 +29,6 @@ export const USER: User = {
   jobs: [
     {
       title: "Full Stack Developer",
-      company: "Rahul Solutions",
-      website: "https://rahulsolutions.in",
-    },
-    {
-      title: "Frontend Developer Intern",
       company: "Rahul Solutions",
       website: "https://rahulsolutions.in",
     },
