@@ -4,8 +4,13 @@ import { BriefcaseBusinessIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import type { Experience } from "@/features/portfolio/types/experience";
 import { ExperiencePositionItem } from "./ExperiencePositionItem";
+import { sortExperiencePositionsByDurationDesc } from "@/utils/data";
 
 export function ExperienceItem({ experience }: { experience: Experience }) {
+  const sortedPositions = sortExperiencePositionsByDurationDesc(
+    experience.positions
+  );
+
   return (
     <div className="space-y-4 py-4 pr-2 pl-4 select-none">
       <div className="flex items-center gap-3">
@@ -35,7 +40,7 @@ export function ExperienceItem({ experience }: { experience: Experience }) {
       </div>
 
       <div className="relative space-y-4 before:absolute before:left-3 before:h-full before:w-px before:bg-border">
-        {experience.positions.map((position) => (
+        {sortedPositions.map((position) => (
           <ExperiencePositionItem key={position.id} position={position} />
         ))}
       </div>

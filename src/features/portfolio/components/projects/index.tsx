@@ -9,8 +9,11 @@ import {
 } from "@/components/shared/Panel";
 import { ProjectItem } from "./ProjectItem";
 import { PROJECTS } from "@/features/portfolio/data/project";
+import { sortProjectsByPeriodDesc } from "@/utils/data";
 
 export function ProjectsSection() {
+  const sorted = sortProjectsByPeriodDesc(PROJECTS);
+
   return (
     <section id="projects" className="px-2 scroll-mt-24">
       <Panel className="max-w-7xl mx-auto">
@@ -25,7 +28,7 @@ export function ProjectsSection() {
         </PanelHeader>
 
         <CollapsibleList
-          items={PROJECTS}
+          items={sorted}
           max={4}
           renderItem={(item) => <ProjectItem project={item} />}
         />

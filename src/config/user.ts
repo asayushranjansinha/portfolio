@@ -13,7 +13,7 @@ export const USER: User = {
 <a href="/#contact" class="underline-offset-4 hover:underline transition font-medium">Seeking opportunities</a> to contribute to high-impact products in a collaborative engineering environment where I can apply my technical skills, grow professionally, and build software that makes a difference.
 `,
 
-  resumeURL: "https://drive.google.com/file/d/18UgVlyEYMKxDBqzy3bdQRTjPwl7-yqtE/view?usp=sharing",
+  resumeURL: "https://drive.google.com/file/d/18UgVlyEYMKxDBqzy3bdQRTjPwl7-yqtE/view?usp=sharinggh",
   flipSentences: [
     "Full Stack Developer",
     "React • Next.js • TypeScript",

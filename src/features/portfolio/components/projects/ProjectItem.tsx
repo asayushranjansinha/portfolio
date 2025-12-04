@@ -86,23 +86,25 @@ export function ProjectItem({
                 </dl>
               </div>
 
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Link
-                    className="relative flex size-6 shrink-0 items-center justify-center text-muted-foreground after:absolute after:-inset-2 hover:text-foreground"
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <LinkIcon className="pointer-events-none size-4" />
-                    <span className="sr-only">Open Project Link</span>
-                  </Link>
-                </TooltipTrigger>
+              {project.link && (
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Link
+                      className="relative flex size-6 shrink-0 items-center justify-center text-muted-foreground after:absolute after:-inset-2 hover:text-foreground"
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <LinkIcon className="pointer-events-none size-4" />
+                      <span className="sr-only">Open Project Link</span>
+                    </Link>
+                  </TooltipTrigger>
 
-                <TooltipContent>
-                  <p>Open Project Link</p>
-                </TooltipContent>
-              </Tooltip>
+                  <TooltipContent>
+                    <p>Open Project Link</p>
+                  </TooltipContent>
+                </Tooltip>
+              )}
 
               <div
                 className="shrink-0 text-muted-foreground [&_svg]:size-4"
