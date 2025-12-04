@@ -22,7 +22,7 @@ export const USER: User = {
     "Building scalable products",
   ],
   address: "Bengaluru, India",
-  phoneNumber: "YXNheXVzaHJhbmphbnNpbmhhQGdtYWlsLmNvbQ==", // base64 encoded E.164, keep as-is
+  phoneNumber: "KzkxODcwOTQxNTU5OA==", // base64 encoded E.164, keep as-is
   email: "YXNheXVzaHJhbmphbnNpbmhhQGdtYWlsLmNvbQ==", // base64 encoded, keep as-is
   website: process.env.NEXT_PUBLIC_BASE_APP_URL!,
   jobTitle: "Full Stack Developer",
