@@ -13,9 +13,10 @@ export function SiteFooter() {
             Built by{" "}
             <Link
               className="link hover:text-primary transition-colors"
-              href={`https://x.com/${USER.username}`}
+              href="https://linkedin.com/in/asayushranjansinha"
               target="_blank"
               rel="noopener"
+              aria-label="See my LinkedIn profile"
               prefetch
             >
               {USER.displayName}
