@@ -38,7 +38,7 @@ Ensure you have the following installed:
 1.  Clone the repository:
 
     ```bash
-    git clone https://github.com/asayushranjansinha/ayushportfolio.git
+    git clone https://github.com/asayushranjansinha/portfolio.git
     cd portfolio-25
     ```
 
