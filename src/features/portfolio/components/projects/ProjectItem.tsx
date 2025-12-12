@@ -1,4 +1,4 @@
-import { InfinityIcon, LinkIcon } from "lucide-react";
+import { InfinityIcon, LinkIcon, Globe } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -85,6 +85,26 @@ export function ProjectItem({
                   </dd>
                 </dl>
               </div>
+
+              {project.deploymentLink && (
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Link
+                      className="relative flex size-6 shrink-0 items-center justify-center text-muted-foreground after:absolute after:-inset-2 hover:text-foreground"
+                      href={project.deploymentLink}
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <Globe className="pointer-events-none size-4" />
+                      <span className="sr-only">Open Live Deployment Link</span>
+                    </Link>
+                  </TooltipTrigger>
+
+                  <TooltipContent>
+                    <p>Open Live Deployment</p>
+                  </TooltipContent>
+                </Tooltip>
+              )}
 
               {project.link && (
                 <Tooltip>

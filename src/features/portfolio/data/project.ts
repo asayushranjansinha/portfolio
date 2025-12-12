@@ -2,29 +2,30 @@ import type { Project } from "@/features/portfolio/types/project";
 
 export const PROJECTS: Project[] = [
   {
-  id: "postman-prismapulseapi",
-  title: "POSTMAN (PrismaPulseAPI) - Modern API Development Platform",
-  period: {
-    start: "11.2025",
-    end: "Present",
-  },
-  link: "https://ayushranjansinha-prismapulseapi.vercel.app/", // Deployed URL
-  skills: [
-    "Next.js 15.5",
-    "React 19",
-    "TypeScript",
-    "Prisma 6.19",
-    "PostgreSQL",
-    "Better Auth",
-    "Google AI SDK (Gemini)",
-    "Monaco Editor",
-    "Zustand",
-    "TanStack Query",
-    "Tailwind CSS 4.x",
-    "Server Actions",
-    "Docker",
-  ],
-  description: `
+    id: "postman-prismapulseapi",
+    title: "POSTMAN (PrismaPulseAPI) - Modern API Development Platform",
+    period: {
+      start: "11.2025",
+      end: "Present",
+    },
+    link: "https://github.com/asayushranjansinha/postman",
+    deploymentLink: "https://ayushranjansinha-prismapulseapi.vercel.app/", // Deployed URL
+    skills: [
+      "Next.js 15.5",
+      "React 19",
+      "TypeScript",
+      "Prisma 6.19",
+      "PostgreSQL",
+      "Better Auth",
+      "Google AI SDK (Gemini)",
+      "Monaco Editor",
+      "Zustand",
+      "TanStack Query",
+      "Tailwind CSS 4.x",
+      "Server Actions",
+      "Docker",
+    ],
+    description: `
 A **powerful, feature-rich API client and testing platform** designed as a robust alternative to tools like Postman, showcasing enterprise-grade full-stack development.
 
 ### Core Features
@@ -47,9 +48,9 @@ A **powerful, feature-rich API client and testing platform** designed as a robus
 - Complete relational database schema for User, Workspace, Collection, Request, Environment, and RequestRun.
 - Clear **Feature-Based Structure** and **Server/Client Separation**.
   `,
-  logo: "/images/projects/postman.svg",
-  isExpanded: true,
-},
+    logo: "/images/projects/postman.svg",
+    isExpanded: true,
+  },
   {
     id: "n8n-workflow-automation",
     title: "N8N - Advanced Workflow Automation Platform",
@@ -58,6 +59,7 @@ A **powerful, feature-rich API client and testing platform** designed as a robus
       end: "Present",
     },
     link: "https://github.com/asayushranjansinha/n8n",
+    deploymentLink: "https://ayushranjansinha-n8n.vercel.app",
     skills: [
       "Next.js 15",
       "React 19",
@@ -180,7 +182,8 @@ Currently handling final testing and optimization before public launch on mobile
       start: "10.2025",
       end: "Present",
     },
-    link: "https://ayushranjansinha.vercel.app",
+    link: "https://github.com/asayushranjansinha/portfolio",
+    deploymentLink: "https://ayushranjansinha.vercel.app",
     skills: [
       "Next.js",
       "React",

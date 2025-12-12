@@ -14,6 +14,8 @@ export type Project = {
   };
   /** Public URL (site, repository, demo, or video). */
   link?: string;
+  /** **Optional: URL to the live, deployed application/demo.** */
+  deploymentLink?: string; // <-- **Renamed from anemoneLink**
   /** Tags/technologies for chips or filtering. */
   skills: string[];
   /** Optional rich description; Markdown and line breaks supported. */
