@@ -2,6 +2,55 @@ import type { Project } from "@/features/portfolio/types/project";
 
 export const PROJECTS: Project[] = [
   {
+  id: "postman-prismapulseapi",
+  title: "POSTMAN (PrismaPulseAPI) - Modern API Development Platform",
+  period: {
+    start: "11.2025",
+    end: "Present",
+  },
+  link: "https://ayushranjansinha-prismapulseapi.vercel.app/", // Deployed URL
+  skills: [
+    "Next.js 15.5",
+    "React 19",
+    "TypeScript",
+    "Prisma 6.19",
+    "PostgreSQL",
+    "Better Auth",
+    "Google AI SDK (Gemini)",
+    "Monaco Editor",
+    "Zustand",
+    "TanStack Query",
+    "Tailwind CSS 4.x",
+    "Server Actions",
+    "Docker",
+  ],
+  description: `
+A **powerful, feature-rich API client and testing platform** designed as a robust alternative to tools like Postman, showcasing enterprise-grade full-stack development.
+
+### Core Features
+- **Comprehensive HTTP Support**: Full support for all HTTP methods (GET, POST, etc.) with dynamic request building.
+- **Advanced Request Editor**: Integrated **Monaco Editor** for professional-grade JSON/XML body editing, with syntax highlighting and validation.
+- **Enterprise Authentication**: Secure multi-provider OAuth (GitHub, Google) and email/password authentication using **Better Auth**, featuring Role-Based Access Control (RBAC) for workspaces.
+- **AI-Powered Assistance**: Integration with **Google Gemini** for intelligent request generation and error response analysis.
+- **Organization & Collaboration**: Full support for Workspaces, Collections, and Environment Variables for effective API workflow management.
+- **Response Visualization**: Detailed view of status, time, size, headers, and body.
+
+### Technical Architecture
+- **Production-Ready**: Built with Next.js Server Actions and Prisma for type-safe, efficient data mutation.
+- **Type-Safe End-to-End**: Full TypeScript implementation with **Zod** schema validation.
+- **Complex State Management**: Uses **Zustand** for client state (active tabs) and **TanStack Query** for server state (optimistic updates).
+- **Proxy Pattern**: Next.js API/Server Actions act as a proxy to handle CORS for third-party API requests.
+- **Modern UI/UX**: Built with Shadcn/Radix UI and Tailwind CSS v4.
+
+### Key Highlights
+- Demonstrates advanced skills in **Server Actions**, **Monaco Editor** integration, **RBAC**, and **AI-powered features**.
+- Complete relational database schema for User, Workspace, Collection, Request, Environment, and RequestRun.
+- Clear **Feature-Based Structure** and **Server/Client Separation**.
+  `,
+  logo: "/images/projects/postman.svg",
+  isExpanded: true,
+},
+  {
     id: "n8n-workflow-automation",
     title: "N8N - Advanced Workflow Automation Platform",
     period: {
