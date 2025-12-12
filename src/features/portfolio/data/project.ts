@@ -3,7 +3,8 @@ import type { Project } from "@/features/portfolio/types/project";
 export const PROJECTS: Project[] = [
   {
     id: "postman-prismapulseapi",
-    title: "POSTMAN (PrismaPulseAPI) - Modern API Development Platform",
+    title: "POSTMAN - API Development Platform",
+    image: "/images/projects/postman.webp",
     period: {
       start: "11.2025",
       end: "Present",
@@ -54,6 +55,7 @@ A **powerful, feature-rich API client and testing platform** designed as a robus
   {
     id: "n8n-workflow-automation",
     title: "N8N - Advanced Workflow Automation Platform",
+    image: "/images/projects/n8n.webp",
     period: {
       start: "08.2024",
       end: "Present",

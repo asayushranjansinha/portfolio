@@ -12,6 +12,8 @@ export type Project = {
     /** End date; leave undefined for "Present". */
     end?: string;
   };
+  /** Project image URL (absolute or path under /public). */
+  image?:string;
   /** Public URL (site, repository, demo, or video). */
   link?: string;
   /** **Optional: URL to the live, deployed application/demo.** */
