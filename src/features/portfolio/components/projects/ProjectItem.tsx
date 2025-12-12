@@ -1,4 +1,4 @@
-import { InfinityIcon, LinkIcon } from "lucide-react";
+import { InfinityIcon, LinkIcon, Globe } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -86,6 +86,26 @@ export function ProjectItem({
                 </dl>
               </div>
 
+              {project.deploymentLink && (
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Link
+                      className="relative flex size-6 shrink-0 items-center justify-center text-muted-foreground after:absolute after:-inset-2 hover:text-foreground"
+                      href={project.deploymentLink}
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <Globe className="pointer-events-none size-4" />
+                      <span className="sr-only">Open Live Deployment Link</span>
+                    </Link>
+                  </TooltipTrigger>
+
+                  <TooltipContent>
+                    <p>Open Live Deployment</p>
+                  </TooltipContent>
+                </Tooltip>
+              )}
+
               {project.link && (
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -119,6 +139,18 @@ export function ProjectItem({
         <CollapsibleContent className="group overflow-hidden duration-300 data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down select-none">
           <div className="border-t border-edge shadow-inner">
             <div className="space-y-4 p-4 duration-300 group-data-[state=closed]:animate-fade-out group-data-[state=open]:animate-fade-in">
+              {project.image && (
+                <div className="relative w-full aspect-video overflow-hidden rounded-lg border border-edge bg-muted">
+                  <Image
+                    src={project.image}
+                    alt={`${project.title} preview`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                  />
+                </div>
+              )}
+
               {project.description && (
                 <ProseMono>
                   <Markdown>{project.description}</Markdown>
