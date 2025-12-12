@@ -172,11 +172,18 @@ export const TECH_STACK: TechStack[] = [
 
   // AI & Integration
   {
-    key: "openai",
-    title: "OpenAI",
-    href: "https://openai.com/",
+    key: "googlegemini",
+    title: "Google Gemini",
+    href: "https://gemini.google.com/",
     categories: ["AI", "API"],
-    theme: true,
+    // theme: true,
+  },
+  {
+    key: "anthropic",
+    title: "Anthropic",
+    href: "https://anthropic.com/",
+    categories: ["AI", "API"],
+    // theme: true,
   },
   {
     key: "stripe",

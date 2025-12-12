@@ -26,7 +26,7 @@ export const TechStackItem = ({ tech }: TechStackItemProps) => {
             alt={`${tech.title} icon`}
             width={32}
             height={32}
-            className={tech.theme ? "dark:invert! " : ""}
+            // className={tech.theme ? "dark:invert! " : ""}
             unoptimized
           />
           <span className="sr-only">{tech.title}</span>
