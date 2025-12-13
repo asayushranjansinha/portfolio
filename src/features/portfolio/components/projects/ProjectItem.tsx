@@ -1,23 +1,24 @@
-import { InfinityIcon, LinkIcon, Globe } from "lucide-react";
+import { Globe, InfinityIcon, LinkIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { Icons } from "@/components/shared/Icons";
 import { Markdown } from "@/components/shared/MarkdownView";
+import { Badge } from "@/components/ui/badge";
 import {
   CollapsibleChevronsIcon,
   CollapsibleContent,
   CollapsibleTrigger,
   CollapsibleWithContext,
 } from "@/components/ui/collapsible-with-icon";
-import { Badge } from "@/components/ui/badge";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { ProseMono } from "@/components/ui/typography";
-import { Icons } from "@/components/shared/Icons";
 
+import { ImageZoom } from "@/components/ui/image-zoom";
 import type { Project } from "@/features/portfolio/types/project";
 
 export function ProjectItem({
@@ -140,11 +141,10 @@ export function ProjectItem({
           <div className="border-t border-edge shadow-inner">
             <div className="space-y-4 p-4 duration-300 group-data-[state=closed]:animate-fade-out group-data-[state=open]:animate-fade-in">
               {project.image && (
-                <div className="relative w-full aspect-video overflow-hidden rounded-lg border border-edge bg-muted">
-                  <Image
+                <div className="relative w-full aspect-video overflow-hidden border border-edge bg-muted">
+                  <ImageZoom
                     src={project.image}
                     alt={`${project.title} preview`}
-                    fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
                   />
