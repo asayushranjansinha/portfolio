@@ -16,56 +16,77 @@ import { cn } from "@/lib/utils";
 export default function Page() {
   return (
     <div className="w-full *:[[id]]:scroll-mt-22">
+      {/* 1. THE HOOK: Who are you? */}
       {SHOW_SECTIONS.profile && <ProfileSection />}
+
+      {/* 2. THE SNAPSHOT: High-level metrics/skills summary */}
       {SHOW_SECTIONS.overview && <OverviewSection />}
-      {SHOW_SECTIONS.careerObjective && (
-        <>
-          <Separator />
-          <CareerObjectiveSection />
-        </>
-      )}
+
+      {/* 3. THE ASSET: Give me the document immediately. Low friction. */}
       {SHOW_SECTIONS.resume && (
         <>
           <Separator />
           <ResumeSection />
         </>
       )}
-      {SHOW_SECTIONS.about && (
-        <>
-          <Separator />
-          <AboutSection />
-        </>
-      )}
+
+      {/* 4. THE MEAT: This is the #1 thing recruiters look for. */}
       {SHOW_SECTIONS.experiences && (
         <>
           <Separator />
           <ExperiencesSection />
         </>
       )}
+
+      {/* 5. THE PROOF: Show me you can code. */}
       {SHOW_SECTIONS.projects && (
         <>
           <Separator />
           <ProjectsSection />
         </>
       )}
-      {SHOW_SECTIONS.blogs && (
-        <>
-          <Separator />
-          <BlogsSection />
-        </>
-      )}
+
+      {/* 6. THE DIFFERENTIATOR: Awards set you apart from the stack. */}
       {SHOW_SECTIONS.achievements && (
         <>
           <Separator />
           <AchievementsSection />
         </>
       )}
+
+      {/* 7. SOCIAL PROOF: Validation from others. */}
       {SHOW_SECTIONS.testimonials && (
         <>
           <Separator />
           <TestimonialsSection />
         </>
       )}
+
+      {/* 8. CULTURE FIT: Now that I know you can code, who are you? */}
+      {SHOW_SECTIONS.about && (
+        <>
+          <Separator />
+          <AboutSection />
+        </>
+      )}
+
+      {/* 9. INTENT: Specific goals. (Lower priority than hard skills) */}
+      {SHOW_SECTIONS.careerObjective && (
+        <>
+          <Separator />
+          <CareerObjectiveSection />
+        </>
+      )}
+
+      {/* 10. THOUGHT LEADERSHIP: Bonus points for writing. */}
+      {SHOW_SECTIONS.blogs && (
+        <>
+          <Separator />
+          <BlogsSection />
+        </>
+      )}
+
+      {/* 11. CTA: The end of the flow. */}
       {SHOW_SECTIONS.contact && (
         <>
           <Separator />

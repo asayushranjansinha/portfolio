@@ -18,9 +18,7 @@ export const EXPERIENCES: Experience[] = [
 - Implemented Redis caching and BullMQ workers to optimize performance, reducing average response times and enabling efficient background task processing.
 - Developed scheduled OTP sending system and progress analytics workers for automated user engagement.
 - Integrated AWS S3 for secure asset uploads including video lectures, notes, and assignments with role-based access control.
-- Implemented DLT-verified SMS OTP authentication flow for secure user verification and access-code-based assessment features.
 - Built access-code-based test flows with role-based dashboards for students, instructors, and administrators.
-- Currently in final development phase with launch planned on App Store and Play Store soon.
 - Designed and architected the complete system from database schema to mobile UI components.`,
         skills: [
           "React Native",
@@ -34,7 +32,6 @@ export const EXPERIENCES: Experience[] = [
           "AWS S3",
           "REST APIs",
           "JWT",
-          "DLT SMS API",
           "Mobile Development",
           "Backend Development",
           "System Architecture",

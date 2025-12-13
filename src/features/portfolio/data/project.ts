@@ -150,7 +150,6 @@ Production-grade mobile-first Learning Management System built for **Rahul Solut
 - **Mobile-First Design**: Built with Expo (React Native) for seamless iOS and Android experience
 - **Course Delivery System**: Video lectures, notes, assignments with secure S3-backed file delivery
 - **Access-Code Assessments**: Test flows with role-based access control
-- **DLT-Verified OTP**: Secure SMS-based authentication for user verification
 - **Role-Based Dashboards**: Separate interfaces for students, instructors, and admins
 - **Job Listings Integration**: Connect learners with opportunities
 
@@ -161,7 +160,6 @@ Production-grade mobile-first Learning Management System built for **Rahul Solut
 - **20% Page Load Improvement**: Performance gains from caching and optimization strategies
 
 ### Security & Access Control
-- DLT SMS verification for user authentication
 - Access-code-based test enrollment system
 - Secure file delivery with role-based permissions
 - JWT-based authentication and authorization
@@ -170,7 +168,6 @@ Production-grade mobile-first Learning Management System built for **Rahul Solut
 - **Frontend**: Expo, React Native, TypeScript
 - **Backend**: Node.js, Express.js, PostgreSQL
 - **Infrastructure**: Redis, BullMQ, AWS S3
-- **Authentication**: JWT, DLT SMS OTP
 
 Currently handling final testing and optimization before public launch on mobile app stores.
     `,

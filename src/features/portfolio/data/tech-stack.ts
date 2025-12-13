@@ -183,7 +183,7 @@ export const TECH_STACK: TechStack[] = [
     title: "Anthropic",
     href: "https://anthropic.com/",
     categories: ["AI", "API"],
-    // theme: true,
+    theme: true,
   },
   {
     key: "stripe",
