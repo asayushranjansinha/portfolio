@@ -12,6 +12,7 @@ import { ResumeSection } from "@/features/portfolio/components/resume";
 import { TestimonialsSection } from "@/features/portfolio/components/testimonials";
 
 import { cn } from "@/lib/utils";
+import { WelcomeToast } from "@/components/WelcomeToast";
 
 export default function Page() {
   return (
@@ -93,6 +94,8 @@ export default function Page() {
           <ContactSection />
         </>
       )}
+
+      <WelcomeToast />
     </div>
   );
 }
