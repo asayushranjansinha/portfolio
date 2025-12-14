@@ -95,6 +95,10 @@ export function ProjectItem({
                       href={project.deploymentLink}
                       target="_blank"
                       rel="noopener"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        e.preventDefault();
+                      }}
                     >
                       <Globe className="pointer-events-none size-4" />
                       <span className="sr-only">Open Live Deployment Link</span>
@@ -111,6 +115,10 @@ export function ProjectItem({
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        e.preventDefault();
+                      }}
                       className="relative flex size-6 shrink-0 items-center justify-center text-muted-foreground after:absolute after:-inset-2 hover:text-foreground"
                       href={project.link}
                       target="_blank"
