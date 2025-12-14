@@ -1,3 +1,4 @@
+"use client";
 import { Globe, InfinityIcon, LinkIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
