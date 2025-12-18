@@ -1,3 +1,4 @@
+import { Icons } from "@/components/shared/Icons";
 import {
   Panel,
   PanelHeader,
@@ -6,7 +7,7 @@ import {
   PanelDescription,
 } from "@/components/shared/Panel";
 import { Button } from "@/components/ui/button";
-import { DownloadIcon } from "lucide-react";
+
 import { USER } from "@/config/user";
 
 export function ResumeSection() {
@@ -20,14 +21,33 @@ export function ResumeSection() {
           </PanelDescription>
         </PanelHeader>
 
-        <PanelContent className="flex justify-center py-6">
+        <PanelContent className="flex justify-center gap-4 py-6">
           <Button
             asChild
-            className="inline-flex items-center gap-2 bg-foreground text-background hover:bg-primary transition-all duration-300 ease-out"
+            className="inline-flex items-center gap-2"
           >
-            <a target="_blank" rel="noopener" href={USER.resumeURL}>
-              <DownloadIcon className="size-4" />
-              Download Resume
+            <a
+              href={USER.resumeURL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icons.pdf className="size-4" />
+              Download PDF
+            </a>
+          </Button>
+
+          <Button
+            asChild
+            variant="outline"
+            className="inline-flex items-center gap-2"
+          >
+            <a
+              href={USER.resumeDocsURL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icons.googelDocs className="size-4" />
+              View Docs
             </a>
           </Button>
         </PanelContent>

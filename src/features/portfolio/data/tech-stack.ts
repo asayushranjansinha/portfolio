@@ -15,6 +15,12 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Language"],
   },
   {
+    key: "springboot",
+    title: "Spring Boot",
+    href: "https://spring.io/projects/spring-boot",
+    categories: ["Language"],
+  },
+  {
     key: "html5",
     title: "HTML5",
     href: "https://developer.mozilla.org/en-US/docs/Web/HTML",

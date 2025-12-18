@@ -175,6 +175,51 @@ Currently handling final testing and optimization before public launch on mobile
     isExpanded: true,
   },
   {
+    id: "enterprise-pos-system",
+    title: "Enterprise Point of Sale (POS) System",
+    period: {
+      start: "12.2025",
+      end: "Present",
+    },
+    skills: [
+      "React",
+      "Redux",
+      "Java Spring Boot",
+      "MySQL",
+      "Spring Security",
+      "JPA/Hibernate",
+      "REST APIs",
+      "Razorpay",
+      "Stripe",
+      "shadcn/ui",
+      "Cloudinary",
+    ],
+    description: `
+A **production-grade, multi-tenant SaaS Point of Sale system** designed for supermarkets, malls, and retail chains, showcasing full-stack enterprise development with Java Spring Boot and React.
+
+### Core Features
+- **Cashier Terminal**: Customer-facing checkout interface supporting multiple payment methods (Card, UPI, Cash, Wallet)
+- **Branch Manager Dashboard**: Real-time inventory tracking, low stock alerts, shift reports, and sales analytics
+- **Store Admin Panel**: Multi-location management, user role-based access control, and subscription-based features
+- **Enterprise Features**: Refund processing, invoice generation, loyalty points, sales trends, KPI tracking, and reporting
+
+### Technical Architecture
+- **Frontend**: React with Redux for state management (16 reducers), Axios for API communication, and shadcn/ui for polished components
+- **Backend**: Java Spring Boot with JPA/Hibernate, MySQL, Spring Security for authentication/authorization
+- **APIs**: 14+ REST modules covering authentication, users, stores, products, inventory, orders, refunds, analytics
+- **Payments & Integrations**: Razorpay and Stripe for multiple payment gateways; Cloudinary for media management
+- **Multi-Tenant Architecture**: Supports multiple stores, branch limits, and subscription tiers
+- **Enterprise-Ready**: Secure, scalable, and maintainable backend with modular API structure
+
+### Key Highlights
+- Complete SaaS POS system demonstrating **enterprise architecture**, multi-tenant design, and real-world business logic
+- Production-ready dashboards with **role-based access control** and analytics
+- End-to-end full-stack project suitable for portfolios, interviews, and freelance/commercial work
+  `,
+    logo: "/images/projects/pos-system.svg",
+    isExpanded: true,
+  },
+  {
     id: "ayush-portfolio",
     title: "Developer Portfolio",
     period: {
