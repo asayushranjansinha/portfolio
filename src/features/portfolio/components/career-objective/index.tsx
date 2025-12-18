@@ -14,7 +14,7 @@ export function CareerObjectiveSection() {
         </PanelHeader>
 
         <PanelContent>
-          <div className="font-mono text-sm text-balance">
+          <div className="font-mono text-sm">
             <Markdown>{USER.careerObjective}</Markdown>
           </div>
         </PanelContent>

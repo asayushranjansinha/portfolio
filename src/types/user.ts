@@ -14,6 +14,8 @@ export type User = {
 
   /** Resume Url */
   resumeURL:string;
+  /** Resume Docs URL */
+  resumeDocsURL?:string;
 
   flipSentences: string[];
   /** General location for display */
