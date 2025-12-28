@@ -84,4 +84,6 @@ I focus on writing **clean, performant code** that delivers exceptional user exp
     "leetcode 500+",
   ],
   dateCreated: "2023-10-20",
+  calendarBookingUrl:
+    "https://calendar.app.google/i4Xz1vbXAP4msxQd8",
 };
