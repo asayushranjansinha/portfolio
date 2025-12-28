@@ -23,6 +23,7 @@ export const SHOW_SECTIONS = {
   achievements: process.env.NEXT_PUBLIC_SHOW_ACHIEVEMENTS === "1",
   testimonials: process.env.NEXT_PUBLIC_SHOW_TESTIMONIALS === "1",
   contact: process.env.NEXT_PUBLIC_SHOW_CONTACT === "1",
+  scheduleMeeting: process.env.NEXT_PUBLIC_SHOW_SCHEDULE_MEETING === "1",
 };
 
 // -------------------- NAV FILTER --------------------
@@ -31,6 +32,7 @@ export function getFilteredNav(nav: NavItem[]) {
     if (item.title === "Blogs") return SHOW_SECTIONS.blogs;
     if (item.title === "Achievements") return SHOW_SECTIONS.achievements;
     if (item.title === "Testimonials") return SHOW_SECTIONS.testimonials;
+    if (item.title === "Schedule") return SHOW_SECTIONS.scheduleMeeting;
 
     return true;
   });
@@ -47,6 +49,7 @@ export const MAIN_NAV_DATA: NavItem[] = [
   { title: "Blogs", href: "/#blogs" },
   { title: "Achievements", href: "/#achievements" },
   { title: "Testimonials", href: "/#testimonials" },
+  { title: "Schedule", href: "/#schedule-meeting" },
   { title: "Contact", href: "/#contact", priority: true },
 ];
 

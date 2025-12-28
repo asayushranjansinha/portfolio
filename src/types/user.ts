@@ -13,9 +13,9 @@ export type User = {
   /** Short phrases rotated in UI (e.g., homepage flip effect) */
 
   /** Resume Url */
-  resumeURL:string;
+  resumeURL: string;
   /** Resume Docs URL */
-  resumeDocsURL?:string;
+  resumeDocsURL?: string;
 
   flipSentences: string[];
   /** General location for display */
@@ -48,4 +48,6 @@ export type User = {
   timeZone: string;
   /** Profile/site start date in YYYY-MM-DD */
   dateCreated: string;
+  /** Google Calendar booking URL */
+  calendarBookingUrl?: string;
 };

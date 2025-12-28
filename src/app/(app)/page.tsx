@@ -11,6 +11,8 @@ import { ProjectsSection } from "@/features/portfolio/components/projects";
 import { ResumeSection } from "@/features/portfolio/components/resume";
 import { TestimonialsSection } from "@/features/portfolio/components/testimonials";
 
+import { ScheduleMeetingSection } from "@/features/portfolio/components/schedule-meeting";
+
 import { cn } from "@/lib/utils";
 import { WelcomeToast } from "@/components/WelcomeToast";
 
@@ -87,7 +89,15 @@ export default function Page() {
         </>
       )}
 
-      {/* 11. CTA: The end of the flow. */}
+      {/* 11. SCHEDULING: Allow viewers to book a meeting. */}
+      {SHOW_SECTIONS.scheduleMeeting && (
+        <>
+          <Separator />
+          <ScheduleMeetingSection />
+        </>
+      )}
+
+      {/* 12. CTA: The end of the flow. */}
       {SHOW_SECTIONS.contact && (
         <>
           <Separator />
