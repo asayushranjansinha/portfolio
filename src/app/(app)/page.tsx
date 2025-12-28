@@ -90,7 +90,7 @@ export default function Page() {
       )}
 
       {/* 11. SCHEDULING: Allow viewers to book a meeting. */}
-      {1 && (
+      {SHOW_SECTIONS.scheduleMeeting && (
         <>
           <Separator />
           <ScheduleMeetingSection />
