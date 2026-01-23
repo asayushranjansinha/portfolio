@@ -26,16 +26,11 @@ export function OverviewSection() {
         <h2 className="sr-only">Overview</h2>
 
         <PanelContent className="space-y-2.5">
-          {USER.jobs.map((job, index) => {
-            return (
-              <JobItem
-                key={index}
-                title={job.title}
-                company={job.company}
-                website={job.website}
-              />
-            );
-          })}
+          <JobItem
+            title={USER.jobs[0].title}
+            company={USER.jobs[0].company}
+            website={USER.jobs[0].website}
+          />
 
           <div className="grid gap-x-12 gap-y-2.5 sm:grid-cols-2">
             <IntroItem>

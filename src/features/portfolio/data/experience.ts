@@ -2,6 +2,35 @@ import { Experience } from "@/features/portfolio/types/experience";
 
 export const EXPERIENCES: Experience[] = [
   {
+    id: "etiot-in-work-global",
+    companyName: "ETIOT Innovations | In Work Global",
+    // companyLogo: "/images/companies/etiot.png",
+    positions: [
+      {
+        id: "software-engineer",
+        title: "Software Engineer",
+        duration: {
+          start: "01.2026",
+        },
+        employmentType: "Full-time",
+        icon: "code",
+        description: `Worked the frontend for a BPCL Gas Pipeline Operations & Maintenance application using Vite + React, handling UI architecture and feature development end to end.
+Implemented GIS-based pipeline and asset views using ESRI Maps, enabling location-level monitoring across 100+ mapped assets in the current staging data.`,
+        skills: [
+          "React",
+          "Vite",
+          "ESRI Maps",
+          "GIS",
+          "TypeScript",
+          "UI Architecture",
+          "Tailwind CSS",
+        ],
+        isExpanded: true,
+      },
+    ],
+    isCurrentEmployer: true,
+  },
+  {
     id: "rahul-solutions",
     companyName: "Rahul Solutions",
     companyLogo: "/images/companies/rahulsolutions.png",
@@ -11,6 +40,7 @@ export const EXPERIENCES: Experience[] = [
         title: "Full Stack Developer",
         duration: {
           start: "01.2024",
+          end: "12.2025",
         },
         employmentType: "Full-time",
         icon: "code",
@@ -67,7 +97,6 @@ export const EXPERIENCES: Experience[] = [
         ],
       },
     ],
-    isCurrentEmployer: true,
   },
   {
     id: "education",
