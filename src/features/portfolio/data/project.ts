@@ -2,6 +2,46 @@ import type { Project } from "@/features/portfolio/types/project";
 
 export const PROJECTS: Project[] = [
   {
+    id: "bpcl-gas-pipeline-gis",
+    title: "Gas Pipeline Operations & GIS Maintenance",
+    period: {
+      start: "01.2026",
+      end: "Present",
+    },
+    skills: [
+      "React",
+      "Vite",
+      "TypeScript",
+      "ESRI Maps",
+      "GIS Integration",
+      "Tailwind CSS",
+      "Zustand",
+      "RESTful APIs",
+      "UI Architecture",
+    ],
+    description: `
+An enterprise-grade **Operations and Maintenance (O&M) application** for BPCL's Gas Pipeline infrastructure, focusing on real-time asset tracking and geographical monitoring.
+
+### Core Features
+- **GIS Asset Mapping**: Integrated **ESRI Maps** to provide a high-fidelity visual representation of pipeline networks and critical infrastructure.
+- **Location-Level Monitoring**: Real-time tracking of 100+ mapped assets with status indicators and health monitoring.
+- **Interactive Map Interface**: Custom map layers for pipelines, stations, and valves, allowing maintenance teams to pinpoint issues geographically.
+- **Operational Dashboards**: End-to-end UI architecture for managing maintenance schedules, fault reporting, and asset lifecycles.
+
+### Technical Architecture
+- **Performance-Driven Frontend**: Built with **Vite + React** for ultra-fast development cycles and optimized production builds.
+- **Scalable GIS Integration**: Utilized ESRI's mapping engine to handle complex spatial data and interactive GIS layers.
+- **Feature-Driven Structure**: Modular UI architecture designed for scalability and long-term maintainability in an industrial environment.
+
+### Key Highlights
+- Direct impact on **critical national infrastructure** monitoring.
+- Successfully migrated static asset data into a dynamic, **GIS-enabled visualization platform**.
+- Focused on high-reliability UI patterns for professional field operations and maintenance teams.
+  `,
+    // logo: "/images/projects/bpcl.svg",
+    isExpanded: true,
+  },
+  {
     id: "postman-prismapulseapi",
     title: "POSTMAN - API Development Platform",
     image: "/images/projects/postman.webp",
