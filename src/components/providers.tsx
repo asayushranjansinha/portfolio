@@ -12,6 +12,7 @@ export const Providers = ({ children }: { children: React.ReactNode }) => {
       storageKey="theme"
       defaultTheme="system"
       attribute="class"
+      scriptProps={{ type: "application/json" }}
     >
       {children}
     </ThemeProvider>

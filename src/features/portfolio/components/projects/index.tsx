@@ -30,6 +30,7 @@ export function ProjectsSection() {
         <CollapsibleList
           items={sorted}
           max={4}
+          keyExtractor={(item) => item.id}
           renderItem={(item) => <ProjectItem project={item} />}
         />
       </Panel>

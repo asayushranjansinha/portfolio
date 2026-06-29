@@ -1,5 +1,4 @@
 import { ChevronDownIcon } from "lucide-react";
-import { Slot } from "@radix-ui/react-slot";
 import React from "react";
 
 import { Button } from "@/components/ui/button";
@@ -9,43 +8,40 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 
-
 export function CollapsibleList<T>({
   items,
   max = 3,
-
   keyExtractor,
   renderItem,
 }: {
   items: T[];
   max?: number;
-
   keyExtractor?: (item: T) => string;
   renderItem: (item: T) => React.ReactNode;
 }) {
   return (
     <Collapsible>
-      {items.slice(0, max).map((award, index) => (
-        <Slot
-          key={typeof keyExtractor === "function" ? keyExtractor(award) : index}
+      {items.slice(0, max).map((item, index) => (
+        <div
+          key={typeof keyExtractor === "function" ? keyExtractor(item) : index}
           className="border-b border-edge"
         >
-          {renderItem(award)}
-        </Slot>
+          {renderItem(item)}
+        </div>
       ))}
 
       <CollapsibleContent>
-        {items.slice(max).map((award, index) => (
-          <Slot
+        {items.slice(max).map((item, index) => (
+          <div
             key={
               typeof keyExtractor === "function"
-                ? keyExtractor(award)
+                ? keyExtractor(item)
                 : max + index
             }
             className="border-b border-edge"
           >
-            {renderItem(award)}
-          </Slot>
+            {renderItem(item)}
+          </div>
         ))}
       </CollapsibleContent>
 
