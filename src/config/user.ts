@@ -6,31 +6,36 @@ export const USER: User = {
   displayName: "Ayush Ranjan",
   username: "asayushranjansinha",
   gender: "male",
-  bio: "Software Engineer at ETIOT Innovations | Full Stack Developer - React, Next.js, Node.js, TypeScript.",
+  bio: "Software Engineer | Java Spring Boot | React.js | TypeScript | AWS — Full Stack Developer with 2.5+ years across Gen-AI SaaS, enterprise field operations, and EdTech.",
   careerObjective: `
-**Software Engineer** with 2 years of professional experience building production-ready applications. B.Tech CSE graduate (2024, 8.80 CGPA) with expertise in modern web technologies, GIS integrations, and scalable system design.
+**Full Stack Developer** with 2.5+ years of experience across Gen-AI SaaS, enterprise field operations, and EdTech. Comfortable owning the full stack from backend APIs and async job pipelines to performant frontends. Delivered across multiple companies and two enterprise clients (BPCL and Deloitte). Actively using Claude Code and Cursor throughout the development cycle.
 
 <a href="/#contact" class="underline-offset-4 hover:underline transition font-medium">Seeking opportunities</a> to build high-impact products and solve complex engineering challenges in a collaborative environment.
 `,
 
   resumeURL:
-    "https://drive.google.com/file/d/18UgVlyEYMKxDBqzy3bdQRTjPwl7-yqtE/view?usp=sharinggh",
+    "https://drive.google.com/file/d/18UgVlyEYMKxDBqzy3bdQRTjPwl7-yqtE/view?usp=sharing",
   resumeDocsURL:
-    "https://docs.google.com/document/d/1wCrbTg-u3alqXggMkrcwy59KIMBIrxrQ",
+    "https://docs.google.com/document/d/1ZjFtuLA-YU_v0yjoWVlLGC0RySoLVCx0/edit?usp=sharing&ouid=111462391121496426131&rtpof=true&sd=true",
 
   flipSentences: [
-    "Software Engineer @ ETIOT Innovations",
+    "Frontend Engineer @ Cimba.ai",
     "Full Stack Developer",
-    "React • Next.js • TypeScript • Node.js",
+    "Java Spring Boot • React • TypeScript • AWS",
     "B.Tech CSE '24 • 8.80 CGPA",
-    "Building GIS & Automation Tools",
+    "Gen-AI SaaS • GIS • Workflow Automation",
   ],
   address: "Kolkata, West Bengal",
-  phoneNumber: "KzkxODcwOTQxNTU5OA==", 
-  email: "YXNheXVzaHJhbmphbnNpbmhhQGdtYWlsLmNvbQ==", 
+  phoneNumber: "KzkxODcwOTQxNTU5OA==",
+  email: "YXNheXVzaHJhbmphbnNpbmhhQGdtYWlsLmNvbQ==",
   website: process.env.NEXT_PUBLIC_BASE_APP_URL!,
-  jobTitle: "Software Engineer",
+  jobTitle: "Frontend Engineer",
   jobs: [
+    {
+      title: "Frontend Engineer",
+      company: "Cimba.ai",
+      website: "https://cimba.ai",
+    },
     {
       title: "Software Engineer",
       company: "ETIOT Innovations | In Work Global",
@@ -43,23 +48,28 @@ export const USER: User = {
     },
   ],
   about: `
-## Software Engineer | B.Tech CSE Graduate (2024)
+## Full Stack Developer | B.Tech CSE Graduate (2024)
 
-**Professional Experience** Currently working at **ETIOT** as a **Software Engineer**, where I lead frontend development for a BPCL Gas Pipeline Operations application using **Vite + React**. I specialize in implementing **GIS-based pipeline views** using **ESRI Maps** to monitor hundreds of mapped assets in real time. 
+**Professional Experience** Currently at **Cimba.ai**, a US-based Gen-AI SaaS startup, building proactive signals, agent-driven dashboards, and signal execution reports. Previously at **ETIOT Innovations**, I led frontend and backend modules for a BPCL Gas Pipeline Operations platform serving 6 user roles across 100+ screens, with ESRI ArcGIS multi-layer map integration. At **Rahul Solutions**, I built a cross-platform LMS (Expo + React Native) with a Node.js backend, Redis caching, and BullMQ async job queues.
 
-Previously at **Rahul Solutions**, I built a production-grade **LMS mobile app** using **Expo (React Native)** and **Node.js**, optimizing performance with **Redis caching** and **BullMQ workers**.
+**Technical Expertise**
+* **Languages:** Java, TypeScript, JavaScript (ES6+), SQL
+* **Backend:** Java Spring Boot, Node.js, Express.js, REST APIs, WebSockets, tRPC, BullMQ, Inngest
+* **Frontend:** React.js, Next.js, Redux Toolkit, Zustand, TanStack Query, Zod, Tailwind CSS, ShadCN UI
+* **Mobile:** React Native, Expo (iOS and Android)
+* **Databases:** PostgreSQL, MongoDB, Redis, Prisma ORM
+* **Cloud / DevOps:** AWS (S3, EC2), Docker, GitHub Actions, Vercel, Microsoft Azure (Dev / QA / Prod CI/CD)
+* **Auth / Security:** JWT, OAuth 2.0, RBAC, Route Guards, CORS
+* **AI / Tooling:** Google Gemini AI, Vercel AI SDK, Claude Code, Cursor, Monaco Editor
 
-**Technical Expertise** * **Frontend:** **React**, **React Native**, Next.js, TypeScript, Vite, Tailwind CSS, ShadCN UI, GSAP, Framer Motion
-* **Backend:** **Node.js**, **Express**, Java, Spring Boot, PostgreSQL, MongoDB, Redis, tRPC, Prisma
-* **Cloud & Tools:** AWS (S3, EC2), Docker, CI/CD, Git, GitHub Actions, Vercel AI SDK
-* **Integrations:** ESRI Maps (GIS), Google Gemini AI, Stripe, Razorpay, WebSockets
+**Key Projects**
+* **API Testing Platform:** Postman-like tool with Monaco editor, Gemini AI integration, and 3-level RBAC.
+* **Workflow Automation Tool:** Drag-and-drop automation with tRPC, Prisma, Inngest, and multi-provider AI.
+* **Personal Portfolio:** Config-driven Next.js 16 site with GSAP and Lenis scroll animations.
 
-**Key Projects** * **API Testing Platform:** A full-featured tester with Monaco editor and Gemini AI integration for automated request generation.
-* **Workflow Automation Tool:** A visual drag and drop editor for complex automations involving webhooks, AI models, and background jobs.
+**What Drives Me** I focus on writing **clean, performant code** and architecting type-safe systems. I enjoy bridging the gap between complex backend logic and intuitive, high-performance user interfaces.
 
-**What Drives Me** I focus on writing **clean, performant code** and architecting type safe systems. I enjoy bridging the gap between complex backend logic and intuitive, high performance user interfaces.
-
-**Looking For** <a href="/#contact" class="underline-offset-4 hover:underline transition font-medium">Opportunities</a> to contribute to **impactful products** in an engineering-focused environment where I can tackle challenging problems in automation and GIS.
+**Looking For** <a href="/#contact" class="underline-offset-4 hover:underline transition font-medium">Opportunities</a> to contribute to **impactful products** in an engineering-focused environment where I can tackle challenging problems in Gen-AI, automation, and enterprise systems.
   `,
   avatar: "/images/photo.webp",
   ogImage: "/images/photo.webp",
@@ -67,20 +77,27 @@ Previously at **Rahul Solutions**, I built a production-grade **LMS mobile app**
   timeZone: "Asia/Kolkata",
   keywords: [
     "ayush ranjan sinha",
-    "asayushranjan",
+    "asayushranjansinha",
     "software engineer",
     "full stack developer",
+    "frontend engineer",
+    "cimba.ai",
     "etiot",
     "inworkglobal",
-    "naturetechnologies",
+    "java spring boot",
+    "react developer",
+    "typescript developer",
+    "aws developer",
     "gis developer",
-    "esri maps react",
+    "esri arcgis",
+    "gen-ai saas",
     "workflow automation developer",
     "next.js developer",
-    "typescript developer",
     "node.js developer",
     "react native developer",
     "rahul solutions",
+    "bpcl",
+    "deloitte",
   ],
   dateCreated: "2023-10-20",
   calendarBookingUrl:

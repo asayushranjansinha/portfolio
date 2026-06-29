@@ -15,10 +15,16 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Language"],
   },
   {
+    key: "java",
+    title: "Java",
+    href: "https://www.java.com/",
+    categories: ["Language"],
+  },
+  {
     key: "springboot",
     title: "Spring Boot",
     href: "https://spring.io/projects/spring-boot",
-    categories: ["Language"],
+    categories: ["Framework", "Backend"],
   },
   {
     key: "html5",
@@ -113,6 +119,19 @@ export const TECH_STACK: TechStack[] = [
     href: "https://redux.js.org/",
     categories: ["State Management"],
   },
+  {
+    key: "zustand",
+    title: "Zustand",
+    href: "https://zustand.docs.pmnd.rs/",
+    categories: ["State Management"],
+  },
+  {
+    key: "trpc",
+    title: "tRPC",
+    href: "https://trpc.io/",
+    categories: ["Framework", "API"],
+    theme: true,
+  },
 
   // Backend & API
   {
@@ -133,6 +152,25 @@ export const TECH_STACK: TechStack[] = [
     title: "PostgreSQL",
     href: "https://www.postgresql.org/",
     categories: ["Database"],
+  },
+  {
+    key: "redis",
+    title: "Redis",
+    href: "https://redis.io/",
+    categories: ["Database", "Cache"],
+  },
+  {
+    key: "bullmq",
+    title: "BullMQ",
+    href: "https://docs.bullmq.io/",
+    categories: ["Queue", "Backend"],
+  },
+  {
+    key: "inngest",
+    title: "Inngest",
+    href: "https://www.inngest.com/",
+    categories: ["Queue", "Backend"],
+    theme: true,
   },
   {
     key: "prisma",
@@ -222,6 +260,33 @@ export const TECH_STACK: TechStack[] = [
     title: "Docker",
     href: "https://www.docker.com/",
     categories: ["Containerization"],
+  },
+  {
+    key: "aws",
+    title: "AWS",
+    href: "https://aws.amazon.com/",
+    categories: ["Cloud"],
+    theme: true,
+  },
+  {
+    key: "azure",
+    title: "Microsoft Azure",
+    href: "https://azure.microsoft.com/",
+    categories: ["Cloud", "CI/CD"],
+    theme: true,
+  },
+  {
+    key: "githubactions",
+    title: "GitHub Actions",
+    href: "https://github.com/features/actions",
+    categories: ["CI/CD", "DevOps"],
+  },
+  {
+    key: "vercel",
+    title: "Vercel",
+    href: "https://vercel.com/",
+    categories: ["Cloud", "Hosting"],
+    theme: true,
   },
   {
     key: "figma",

@@ -2,99 +2,49 @@ import type { Project } from "@/features/portfolio/types/project";
 
 export const PROJECTS: Project[] = [
   {
-    id: "bpcl-gas-pipeline-gis",
-    title: "Gas Pipeline Operations & GIS Maintenance",
-    period: {
-      start: "01.2026",
-      end: "Present",
-    },
-    skills: [
-      "React",
-      "Vite",
-      "TypeScript",
-      "ESRI Maps",
-      "GIS Integration",
-      "Tailwind CSS",
-      "Zustand",
-      "RESTful APIs",
-      "UI Architecture",
-    ],
-    description: `
-An enterprise-grade **Operations and Maintenance (O&M) application** for BPCL's Gas Pipeline infrastructure, focusing on real-time asset tracking and geographical monitoring.
-
-### Core Features
-- **GIS Asset Mapping**: Integrated **ESRI Maps** to provide a high-fidelity visual representation of pipeline networks and critical infrastructure.
-- **Location-Level Monitoring**: Real-time tracking of 100+ mapped assets with status indicators and health monitoring.
-- **Interactive Map Interface**: Custom map layers for pipelines, stations, and valves, allowing maintenance teams to pinpoint issues geographically.
-- **Operational Dashboards**: End-to-end UI architecture for managing maintenance schedules, fault reporting, and asset lifecycles.
-
-### Technical Architecture
-- **Performance-Driven Frontend**: Built with **Vite + React** for ultra-fast development cycles and optimized production builds.
-- **Scalable GIS Integration**: Utilized ESRI's mapping engine to handle complex spatial data and interactive GIS layers.
-- **Feature-Driven Structure**: Modular UI architecture designed for scalability and long-term maintainability in an industrial environment.
-
-### Key Highlights
-- Direct impact on **critical national infrastructure** monitoring.
-- Successfully migrated static asset data into a dynamic, **GIS-enabled visualization platform**.
-- Focused on high-reliability UI patterns for professional field operations and maintenance teams.
-  `,
-    // logo: "/images/projects/bpcl.svg",
-    isExpanded: true,
-  },
-  {
-    id: "postman-prismapulseapi",
-    title: "POSTMAN - API Development Platform",
+    id: "api-testing-platform",
+    title: "API Testing Platform",
     image: "/images/projects/postman.webp",
     period: {
       start: "11.2025",
       end: "Present",
     },
     link: "https://github.com/asayushranjansinha/postman",
-    deploymentLink: "https://ayushranjansinha-prismapulseapi.vercel.app/", // Deployed URL
+    deploymentLink: "https://ayushranjansinha-prismapulseapi.vercel.app/",
     skills: [
-      "Next.js 15.5",
-      "React 19",
+      "Next.js",
       "TypeScript",
-      "Prisma 6.19",
       "PostgreSQL",
-      "Better Auth",
-      "Google AI SDK (Gemini)",
-      "Monaco Editor",
-      "Zustand",
       "TanStack Query",
-      "Tailwind CSS 4.x",
+      "Google Gemini AI",
+      "Monaco Editor",
       "Server Actions",
-      "Docker",
+      "OAuth 2.0",
+      "RBAC",
+      "Tailwind CSS",
     ],
     description: `
-A **powerful, feature-rich API client and testing platform** designed as a robust alternative to tools like Postman, showcasing enterprise-grade full-stack development.
+A **Postman-like API testing tool** with support for 7 HTTP methods, Monaco Editor for writing request bodies, multi-provider OAuth, and a 3-level workspace structure (Workspaces, Collections, Environments) using Next.js Server Actions.
 
 ### Core Features
-- **Comprehensive HTTP Support**: Full support for all HTTP methods (GET, POST, etc.) with dynamic request building.
-- **Advanced Request Editor**: Integrated **Monaco Editor** for professional-grade JSON/XML body editing, with syntax highlighting and validation.
-- **Enterprise Authentication**: Secure multi-provider OAuth (GitHub, Google) and email/password authentication using **Better Auth**, featuring Role-Based Access Control (RBAC) for workspaces.
-- **AI-Powered Assistance**: Integration with **Google Gemini** for intelligent request generation and error response analysis.
-- **Organization & Collaboration**: Full support for Workspaces, Collections, and Environment Variables for effective API workflow management.
-- **Response Visualization**: Detailed view of status, time, size, headers, and body.
+- **Comprehensive HTTP Support**: Full support for all 7 HTTP methods with dynamic request building.
+- **Monaco Editor Integration**: Professional-grade JSON/XML body editing with syntax highlighting and validation.
+- **AI-Powered Assistance**: Integrated **Google Gemini AI** to auto-generate request bodies and analyze API responses — cut manual input effort by around 60%.
+- **3-Level RBAC**: Owner, Admin, and Member roles with workspace-level access control.
+- **CORS Proxy**: Safe cross-origin API testing from within the platform.
+- **Server-Side TanStack Query**: Instant UI updates with optimistic caching and background refetching.
 
 ### Technical Architecture
-- **Production-Ready**: Built with Next.js Server Actions and Prisma for type-safe, efficient data mutation.
-- **Type-Safe End-to-End**: Full TypeScript implementation with **Zod** schema validation.
-- **Complex State Management**: Uses **Zustand** for client state (active tabs) and **TanStack Query** for server state (optimistic updates).
-- **Proxy Pattern**: Next.js API/Server Actions act as a proxy to handle CORS for third-party API requests.
-- **Modern UI/UX**: Built with Shadcn/Radix UI and Tailwind CSS v4.
-
-### Key Highlights
-- Demonstrates advanced skills in **Server Actions**, **Monaco Editor** integration, **RBAC**, and **AI-powered features**.
-- Complete relational database schema for User, Workspace, Collection, Request, Environment, and RequestRun.
-- Clear **Feature-Based Structure** and **Server/Client Separation**.
-  `,
+- Built with **Next.js Server Actions** and **PostgreSQL** for type-safe, efficient data mutation.
+- Full TypeScript implementation with **Zod** schema validation.
+- Next.js API/Server Actions act as a proxy to handle CORS for third-party API requests.
+    `,
     logo: "/images/projects/postman.svg",
     isExpanded: true,
   },
   {
-    id: "n8n-workflow-automation",
-    title: "N8N - Advanced Workflow Automation Platform",
+    id: "workflow-automation-tool",
+    title: "Workflow Automation Tool",
     image: "/images/projects/n8n.webp",
     period: {
       start: "08.2024",
@@ -103,165 +53,38 @@ A **powerful, feature-rich API client and testing platform** designed as a robus
     link: "https://github.com/asayushranjansinha/n8n",
     deploymentLink: "https://ayushranjansinha-n8n.vercel.app",
     skills: [
-      "Next.js 15",
-      "React 19",
+      "Next.js",
       "TypeScript",
       "tRPC",
-      "Prisma",
-      "PostgreSQL",
+      "Prisma ORM",
       "Inngest",
-      "Better Auth",
       "Vercel AI SDK",
-      "XYFlow",
       "Stripe",
-      "Redis",
+      "PostgreSQL",
       "Docker",
-      "Serverless",
     ],
     description: `
-A **production-ready workflow automation platform** inspired by n8n, showcasing enterprise-grade architecture and modern full-stack development.
+A **drag-and-drop workflow automation platform** where users can connect HTTP triggers, webhooks, conditional logic, and AI model calls (OpenAI, Claude, Gemini) with live execution monitoring.
 
 ### Core Features
-- **Visual Workflow Editor**: Drag-and-drop node-based builder powered by XYFlow (ReactFlow) with real-time state management using Jotai
-- **AI-Powered Workflows**: Multi-provider integration (OpenAI GPT, Anthropic Claude, Google Gemini) with streaming responses via Vercel AI SDK
-- **Distributed Execution**: Background workflow processing using Inngest with real-time monitoring and error tracking
-- **Multi-Trigger System**: HTTP webhooks, Google Forms integration, Stripe payment events, and manual triggers
-- **Enterprise Authentication**: Better Auth with GitHub/Google OAuth + email/password, secure session management
+- **Visual Workflow Editor**: Drag-and-drop node-based builder with real-time state management.
+- **Multi-Provider AI**: Integration with OpenAI, Anthropic Claude, and Google Gemini with streaming responses via Vercel AI SDK.
+- **Distributed Execution**: Background workflow processing using **Inngest** with real-time monitoring and error tracking.
+- **Multi-Trigger System**: HTTP webhooks, conditional logic, and manual triggers.
+- **Payments**: Integrated **Stripe** for subscription management.
 
 ### Technical Architecture
-- **Type-Safe End-to-End**: Full TypeScript implementation with tRPC for type-safe APIs and Prisma for database operations
-- **Feature-Based Structure**: Organized by domain (auth, workflows, executions, credentials, subscriptions)
-- **Server/Client Separation**: Clear boundaries with React Server Components and optimistic updates via TanStack Query
-- **Atomic State Management**: Jotai atoms for granular, composable workflow state
-- **Real-Time Collaboration**: Live workflow execution status with Inngest Realtime channels
-
-### Security & Scalability
-- **Encrypted Credentials**: AES-256 encryption for API keys and sensitive data
-- **Rate Limiting**: Request throttling and usage-based billing integration
-- **Comprehensive Monitoring**: Sentry integration for error tracking and performance monitoring
-- **Production-Grade DB**: PostgreSQL with Prisma migrations, cascading deletes, and optimized queries
-
-### Monetization
-- Full **Stripe** and **Polar.sh** integration for subscription management
-- Usage-based billing with execution tracking
-- Customer portal for self-service management
-
-### DevOps Excellence
-- Docker containerization with docker-compose
-- Multi-process development with mprocs (Next.js, Inngest, ngrok)
-- Automated migrations and environment validation
-- Vercel deployment with production optimizations
-
-### Key Highlights
-- **Complete database schema** with 8+ related models (User, Workflow, Node, Connection, Execution, Credential, etc.)
-- **15+ technology integrations** across AI, payments, authentication, and monitoring
-- **Webhook support** for external service integrations (Stripe, Google Forms)
-- **Execution history** with complete audit trails and error stack traces
-- **Template engine** (Handlebars) for dynamic content generation
-
-Built with **industry best practices**, demonstrating proficiency in distributed systems, real-time architectures, type-safe development, and modern React patterns.
+- **tRPC** for end-to-end type safety across the full stack.
+- **Prisma ORM** for the database layer with optimized relational queries.
+- **Inngest** for distributed background job processing.
+- CORS protection and encrypted credential storage.
     `,
     logo: "/images/projects/automation.svg",
     isExpanded: true,
   },
   {
-    id: "lms-mobile-app",
-    title: "Learning Management System (LMS)",
-    period: {
-      start: "01.2024",
-      end: "Present",
-    },
-    skills: [
-      "React Native",
-      "Expo",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-      "Redis",
-      "BullMQ",
-      "AWS S3",
-      "REST APIs",
-    ],
-    description: `
-Production-grade mobile-first Learning Management System built for **Rahul Solutions**, currently in final development phase before App Store and Play Store launch.
-
-### Core Features
-- **Mobile-First Design**: Built with Expo (React Native) for seamless iOS and Android experience
-- **Course Delivery System**: Video lectures, notes, assignments with secure S3-backed file delivery
-- **Access-Code Assessments**: Test flows with role-based access control
-- **Role-Based Dashboards**: Separate interfaces for students, instructors, and admins
-- **Job Listings Integration**: Connect learners with opportunities
-
-### ⚡ Performance Optimizations
-- **Redis Caching**: Reduced response times and improved scalability
-- **BullMQ Workers**: Background task processing for scheduled OTP sending and progress analytics
-- **Optimized Media Delivery**: S3 integration for efficient video streaming and file downloads
-- **20% Page Load Improvement**: Performance gains from caching and optimization strategies
-
-### Security & Access Control
-- Access-code-based test enrollment system
-- Secure file delivery with role-based permissions
-- JWT-based authentication and authorization
-
-###  Technical Stack
-- **Frontend**: Expo, React Native, TypeScript
-- **Backend**: Node.js, Express.js, PostgreSQL
-- **Infrastructure**: Redis, BullMQ, AWS S3
-
-Currently handling final testing and optimization before public launch on mobile app stores.
-    `,
-    logo: "/images/projects/lms.svg",
-    isExpanded: true,
-  },
-  {
-    id: "enterprise-pos-system",
-    title: "Enterprise Point of Sale (POS) System",
-    period: {
-      start: "12.2025",
-      end: "Present",
-    },
-    skills: [
-      "React",
-      "Redux",
-      "Java Spring Boot",
-      "MySQL",
-      "Spring Security",
-      "JPA/Hibernate",
-      "REST APIs",
-      "Razorpay",
-      "Stripe",
-      "shadcn/ui",
-      "Cloudinary",
-    ],
-    description: `
-A **production-grade, multi-tenant SaaS Point of Sale system** designed for supermarkets, malls, and retail chains, showcasing full-stack enterprise development with Java Spring Boot and React.
-
-### Core Features
-- **Cashier Terminal**: Customer-facing checkout interface supporting multiple payment methods (Card, UPI, Cash, Wallet)
-- **Branch Manager Dashboard**: Real-time inventory tracking, low stock alerts, shift reports, and sales analytics
-- **Store Admin Panel**: Multi-location management, user role-based access control, and subscription-based features
-- **Enterprise Features**: Refund processing, invoice generation, loyalty points, sales trends, KPI tracking, and reporting
-
-### Technical Architecture
-- **Frontend**: React with Redux for state management (16 reducers), Axios for API communication, and shadcn/ui for polished components
-- **Backend**: Java Spring Boot with JPA/Hibernate, MySQL, Spring Security for authentication/authorization
-- **APIs**: 14+ REST modules covering authentication, users, stores, products, inventory, orders, refunds, analytics
-- **Payments & Integrations**: Razorpay and Stripe for multiple payment gateways; Cloudinary for media management
-- **Multi-Tenant Architecture**: Supports multiple stores, branch limits, and subscription tiers
-- **Enterprise-Ready**: Secure, scalable, and maintainable backend with modular API structure
-
-### Key Highlights
-- Complete SaaS POS system demonstrating **enterprise architecture**, multi-tenant design, and real-world business logic
-- Production-ready dashboards with **role-based access control** and analytics
-- End-to-end full-stack project suitable for portfolios, interviews, and freelance/commercial work
-  `,
-    logo: "/images/projects/pos-system.svg",
-    isExpanded: true,
-  },
-  {
-    id: "ayush-portfolio",
-    title: "Developer Portfolio",
+    id: "personal-portfolio",
+    title: "Personal Portfolio",
     period: {
       start: "10.2025",
       end: "Present",
@@ -269,33 +92,25 @@ A **production-grade, multi-tenant SaaS Point of Sale system** designed for supe
     link: "https://github.com/asayushranjansinha/portfolio",
     deploymentLink: "https://ayushranjansinha.vercel.app",
     skills: [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "MDX",
-      "SEO",
-      "Server Components",
+      "Next.js 16",
       "TypeScript",
+      "GSAP",
+      "Lenis",
+      "Tailwind CSS 4",
+      "Server Components",
+      "SEO",
     ],
     description: `
-Personal developer portfolio showcasing projects, experience, blog posts, and technical writing.
+A **config-driven personal portfolio** with fast load times using the latest Next.js and React features with strict TypeScript throughout.
 
 ### Features
-- **Next.js App Router**: Modern file-based routing with Server Components
-- **MDX-Powered Content**: Blog posts and documentation with React components
-- **Dynamic OG Images**: Automated social media previews
-- **SEO Optimized**: Meta tags, structured data, sitemap generation
-- **Component Demos**: Interactive showcases of reusable UI components
-- **Fast Performance**: Optimized for Core Web Vitals
-
-### Design Philosophy
-- Minimal, clean UI with Tailwind CSS
-- Dark mode support
-- Responsive across all devices
-- Accessibility-first approach
-
-Built to demonstrate **modern web development**, **content strategy**, and **technical communication** skills.
+- **Next.js 16 App Router**: Modern file-based routing with Server Components.
+- **GSAP + Lenis**: Scroll animations synced with smooth scrolling for a polished experience.
+- **Config-Driven Architecture**: Adding or updating sections does not require touching component logic.
+- **SEO Optimized**: Meta tags, structured data, and sitemap generation.
+- **Fast Performance**: Optimized for Core Web Vitals with Tailwind CSS 4.
     `,
     logo: "/images/photo.jpeg",
+    isExpanded: true,
   },
 ];
