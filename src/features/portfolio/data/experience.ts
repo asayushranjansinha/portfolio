@@ -2,33 +2,73 @@ import { Experience } from "@/features/portfolio/types/experience";
 
 export const EXPERIENCES: Experience[] = [
   {
+    id: "cimba-ai",
+    companyName: "Cimba.ai",
+    positions: [
+      {
+        id: "frontend-engineer",
+        title: "Frontend Engineer",
+        duration: {
+          start: "04.2026",
+        },
+        employmentType: "Full-time",
+        icon: "code",
+        description: `- Built a **Proactive Signals engine** with fully custom recurrence schedules (e.g. Mon–Fri 8:30–12:30 or any day/time pattern). A cron-based scheduler triggers LLM calls against live agent data and dispatches conditional email alerts with no manual steps involved.
+- Built an **Agent-Driven Dynamic Dashboard** feature that assembles just-in-time dashboards — charts, KPIs, and tables from live agent data — so business leaders get a contextual view and can add follow-up actions directly from the dashboard.
+- Built **Signal Execution Reports** that surface every automated signal run with its LLM input, reasoning chain, model output, and email decision — full trace coverage for debugging and auditing.
+- Cut redundant API calls across the signals dashboard by integrating **TanStack Query** with caching, background refetching, and stale-while-revalidate.
+- Reduced re-render count in data-heavy dashboard components using **React.memo**, **useMemo**, and **useCallback** — decomposed 10+ oversized components and standardized data-fetching patterns across the codebase.`,
+        skills: [
+          "React.js",
+          "TypeScript",
+          "TanStack Query",
+          "LLM Integration",
+          "Cron Scheduling",
+          "Performance Optimization",
+          "React.memo",
+          "useMemo",
+          "useCallback",
+        ],
+        isExpanded: true,
+      },
+    ],
+    isCurrentEmployer: true,
+  },
+  {
     id: "etiot-in-work-global",
     companyName: "ETIOT Innovations | In Work Global",
-    // companyLogo: "/images/companies/etiot.png",
     positions: [
       {
         id: "software-engineer",
         title: "Software Engineer",
         duration: {
           start: "01.2026",
+          end: "04.2026",
         },
         employmentType: "Full-time",
         icon: "code",
-        description: `Worked the frontend for a BPCL Gas Pipeline Operations & Maintenance application using Vite + React, handling UI architecture and feature development end to end.
-Implemented GIS-based pipeline and asset views using ESRI Maps, enabling location-level monitoring across 100+ mapped assets in the current staging data.`,
+        description: `**Client:** Bharat Petroleum Corporation Limited (BPCL) and Deloitte
+
+- Led implementation of frontend and backend modules while coordinating with business analysts, QA teams, and client stakeholders for development of a **Gas Pipeline Operations platform** serving 6 user roles across 100+ screens for BPCL field operations.
+- Rendered **1,000+ live pipeline assets**, patrolmen locations, and safety zones on a single map using **ESRI ArcGIS SDK** multi-layer integration.
+- Implemented **RBAC across 6 roles** with frontend route guards and backend-aligned enforcement — 0 unauthorized route or data access possible at the client layer.
+- Managed **3 Azure environments** (Dev, QA, Prod) with full CI/CD automation — eliminated manual release steps across all environments.
+- Gave multiple requirement and demo sessions directly with Deloitte's Senior BA and BPCL's Digital Business team, cutting pre-sprint scope ambiguity.
+- Participated in code reviews and collaborated closely with QA throughout feature delivery. Worked in Agile sprints with daily stand-ups, sprint planning and retrospectives.`,
         skills: [
           "React",
-          "Vite",
-          "ESRI Maps",
-          "GIS",
           "TypeScript",
-          "UI Architecture",
+          "ESRI ArcGIS",
+          "GIS",
+          "RBAC",
+          "Azure CI/CD",
+          "Java Spring Boot",
           "Tailwind CSS",
+          "Agile",
         ],
         isExpanded: true,
       },
     ],
-    isCurrentEmployer: true,
   },
   {
     id: "rahul-solutions",
@@ -39,17 +79,15 @@ Implemented GIS-based pipeline and asset views using ESRI Maps, enabling locatio
         id: "full-stack-developer",
         title: "Full Stack Developer",
         duration: {
-          start: "01.2024",
-          end: "12.2025",
+          start: "06.2023",
+          end: "12.2023",
         },
         employmentType: "Full-time",
         icon: "code",
-        description: `- Built a production-grade Learning Management System (LMS) using Expo (React Native), TypeScript, and Node.js with PostgreSQL database and Express.js backend.
-- Implemented Redis caching and BullMQ workers to optimize performance, reducing average response times and enabling efficient background task processing.
-- Developed scheduled OTP sending system and progress analytics workers for automated user engagement.
-- Integrated AWS S3 for secure asset uploads including video lectures, notes, and assignments with role-based access control.
-- Built access-code-based test flows with role-based dashboards for students, instructors, and administrators.
-- Designed and architected the complete system from database schema to mobile UI components.`,
+        description: `- Built a cross-platform **LMS for iOS and Android** (Expo + React Native) with a Node.js, Express.js, PostgreSQL backend serving multiple concurrent user roles.
+- Reduced synchronous API load by offloading OTP delivery, daily analytics, and scheduled sync to **Redis** and **BullMQ** async job queues.
+- Shipped a **School Management portal** with 4 independent modules — attendance, timetable, study materials, and results — each backed by PostgreSQL with optimized query patterns.
+- Secured both web and mobile clients with **JWT** and **OAuth 2.0**; RBAC is enforced at the API layer across all roles.`,
         skills: [
           "React Native",
           "Expo",
@@ -59,42 +97,12 @@ Implemented GIS-based pipeline and asset views using ESRI Maps, enabling locatio
           "PostgreSQL",
           "Redis",
           "BullMQ",
-          "AWS S3",
-          "REST APIs",
           "JWT",
-          "Mobile Development",
-          "Backend Development",
-          "System Architecture",
+          "OAuth 2.0",
+          "RBAC",
+          "REST APIs",
         ],
         isExpanded: true,
-      },
-      {
-        id: "frontend-developer-intern",
-        title: "Front End Developer Intern",
-        duration: {
-          start: "06.2023",
-          end: "12.2023",
-        },
-        employmentType: "Internship",
-        icon: "code",
-        description: `- Developed and maintained user interfaces for web applications using React.js, significantly improving user experience and application responsiveness.
-- Collaborated closely with the design team to implement responsive and intuitive UI components, achieving a 20% reduction in average page load time.
-- Integrated RESTful APIs to fetch data and ensure seamless communication between frontend and backend systems.
-- Implemented component-based architecture using React best practices for code reusability and maintainability.
-- Participated in code reviews and followed agile development methodologies.
-- Worked with state management solutions and modern frontend tooling.`,
-        skills: [
-          "React.js",
-          "JavaScript",
-          "HTML5",
-          "CSS3",
-          "REST APIs",
-          "Git",
-          "Responsive Design",
-          "UI/UX Implementation",
-          "Agile",
-          "Teamwork",
-        ],
       },
     ],
   },
@@ -111,49 +119,17 @@ Implemented GIS-based pipeline and asset views using ESRI Maps, enabling locatio
           end: "06.2024",
         },
         icon: "education",
-        description: `- Bachelor of Technology (B.Tech) in Computer Science & Engineering
-- CGPA: 8.80/10.00
-- Coursework: Data Structures and Algorithms, Database Management Systems, Operating Systems, Computer Networks, Software Engineering, Web Technologies, Object-Oriented Programming
-- Built multiple academic projects including web applications and mobile applications
-- Participated in coding competitions and hackathons
-- Strong foundation in computer science fundamentals and problem-solving`,
+        description: `- **B.Tech in Computer Science and Engineering** — CGPA: 8.80
+- Coursework: Data Structures and Algorithms, Database Management Systems, Operating Systems, Computer Networks, Software Engineering, Web Technologies
+- Built multiple academic projects including web applications and mobile applications`,
         skills: [
-          "C++",
           "Java",
+          "C++",
           "Python",
           "Data Structures",
           "Algorithms",
           "Database Management",
-          "Operating Systems",
-          "Computer Networks",
           "Software Engineering",
-          "Problem Solving",
-          "Self-learning",
-        ],
-      },
-      {
-        id: "high-school",
-        title: "Sree Ayyappa Public School, Bokaro Steel City",
-        duration: {
-          start: "04.2016",
-          end: "03.2019",
-        },
-        icon: "education",
-        description: `- Senior Secondary School Certificate (Class 12th)
-- Percentage: 76.66%
-- Stream: Science with Computer Science
-- Built strong foundation in mathematics, physics, and computer science
-- Developed early programming skills and interest in software development
-
-- Secondary School Certificate (Class 10th)
-- CGPA: 9.20/10.00
-- Demonstrated consistent academic excellence
-- Active participation in extracurricular activities and technology clubs`,
-        skills: [
-          "Mathematics",
-          "Computer Science",
-          "Problem Solving",
-          "Self-learning",
         ],
       },
     ],
